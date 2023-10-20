@@ -89,6 +89,14 @@ export class Produto1697070582581 implements MigrationInterface {
             name: 'notaFiscalId',
             type: 'int',
           },
+        ],        
+        foreignKeys: [
+          {
+            columnNames: ['notaFiscalId'],
+            referencedColumnNames: ['id'],
+            referencedTableName: 'nota_fiscal',
+            onDelete: 'CASCADE',
+          },
         ],
       })
     );

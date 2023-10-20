@@ -66,7 +66,7 @@ export class Destinatario1697312391861 implements MigrationInterface {
           {
             columnNames: ['notaFiscalId'],
             referencedColumnNames: ['id'],
-            referencedTableName: 'notafiscal',
+            referencedTableName: 'nota_fiscal',
             onDelete: 'CASCADE',
           },
         ],

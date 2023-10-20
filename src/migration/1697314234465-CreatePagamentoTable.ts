@@ -8,18 +8,18 @@ export class CreatePagamentoTable1697314234465 implements MigrationInterface {
         columns: [
           {
             name: 'id',
-            type: 'serial',
+            type: 'int',
             isPrimary: true,
             isGenerated: true,
             generationStrategy: 'increment',
           },
           {
             name: 'tPag',
-            type: 'string',
+            type: 'varchar',
           },
           {
             name: 'vPag',
-            type: 'string',
+            type: 'varchar',
           },
           {
             name: 'notaFiscalId',
