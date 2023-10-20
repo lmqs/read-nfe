@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    container_name: postgres_container_notas
+    image: postgres
+    restart: always
+    env_file: .env.docker
+    ports:
+      - "3432:5432"
+    volumes:
+      - db-data-xml:/var/lib/postgresql/data
+volumes:
+ db-data-xml:
